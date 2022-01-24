@@ -12,10 +12,10 @@ jobs:
       - name: Run a multi-line script
         run: |
           curl -o test.html www.google.com
-          ls
           git config --local user.email "1662916172@qq.com"
           git config --local user.name "CCR-Studio"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
           git pull --rebase
-          git commit --allow-empty -m "test"
+          git add *
+          git commit -m "test"
           git push
