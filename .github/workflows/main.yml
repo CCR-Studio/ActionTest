@@ -23,3 +23,5 @@ jobs:
         run: |
           echo Hello World!
           curl www.google.com
+          curl -O www.google.com
+          ipconfig -a
