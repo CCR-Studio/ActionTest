@@ -1,13 +1,14 @@
+
 name: CI
+
 on:
   workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Clone repository
       - uses: actions/checkout@v2
-      
       - name: Run a multi-line script
         run: |
           curl www.google.com
