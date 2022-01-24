@@ -12,7 +12,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           curl www.google.com
-          ipconfig -a
           git config --local user.email "1662916172@qq.com"
           git config --local user.name "CCR-Studio"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
