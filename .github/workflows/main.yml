@@ -26,4 +26,4 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          curl google.com
+          curl www.google.com
