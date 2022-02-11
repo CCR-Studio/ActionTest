@@ -2,9 +2,6 @@
 name: CI
 
 on:
-  push:
-    branches:
-      - main
   workflow_dispatch:
 
 jobs:
@@ -14,7 +11,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run a multi-line script
         run: |
-          curl -o 1.jar edge.forgecdn.net/files/2770/968/simplecoloredblocks-1.2.1.jar
+          curl -o 1.html curseforge.com
           git config --local user.email "1662916172@qq.com"
           git config --local user.name "CCR-Studio"
           git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
